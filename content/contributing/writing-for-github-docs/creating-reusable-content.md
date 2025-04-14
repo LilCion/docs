@@ -1,4 +1,18 @@
----
+// server.mjs
+import { createServer } from 'node:http';
+
+const server = createServer((req, res) => {
+  res.writeHead(200, { 'Content-Type': 'text/plain' });
+  res.end('Hello World!\n');
+});
+
+// starts a simple http server locally on port 3000
+server.listen(3000, '127.0.0.1', () => {
+  console.log('Listening on 127.0.0.1:3000');
+});
+
+// run with `node server.mjs`
+PersistedInstallation.W0RFRkFVTFRd+MTozNzI2MjEzMzY3NTA6YW5kcm9pZDoxMTI3MGVkNjIwZWNiYjA4YjkwZDNm.jsonModified 9 April, 01:47---
 title: Creating reusable content
 shortTitle: Create reusable content
 intro: You can create reusable content that can be referenced in multiple content files.
